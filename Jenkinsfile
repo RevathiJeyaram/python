@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('HelloWorld') {
             steps {
-                echo 'Hello, World!'
+                sh '''
+                python3 helloworld.py
+                '''
             }
         }
     }
